@@ -1,7 +1,8 @@
 from pypresence import Presence
+import tkinter
 import time
-with open('../_PROJECTNAME') as f:
-    project_name = f.readlines()
+with open('./_PROJECTNAME') as f:
+    project_name = f.readline()
 
 
 RPC = Presence("872789835528671242")
@@ -15,20 +16,9 @@ RPC.update(
     large_text="V9",
     buttons=[{
         "label":"Get V9",
-        "url":""
+        "url":"https://github.com/V9py/V9"
     }]
 )
-
-while True:
-    time.sleep(15)
-
-
-
-
-
-
-
-
 
 
 main = tkinter.Tk()
